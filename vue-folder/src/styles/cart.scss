@@ -1,0 +1,55 @@
+@import './config.scss';
+
+.cart{
+    table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      margin-bottom: 28%;
+      
+      button{
+        @include button(10px 20px,13px,30px,#fff);
+
+      }
+
+      th, td {
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {background-color: #f2f2f2;}
+
+      .card-head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+   
+        .btn-add{
+            color: #fff;
+            margin-left: 10px;
+            background-color: rgb(39, 39, 238);
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+      }
+      img{
+        width: 60px;
+        height: 60px;
+      }
+
+      .total{
+        padding: 30px;
+        width: 20%;
+        text-align: left;
+        h4{
+          margin-bottom: 10px;
+        }
+        a{
+          @include button(10px 20px,13px,30px,#fff);
+          padding-top: 10px;
+
+        }
+      }
+}

@@ -1,0 +1,102 @@
+
+.lazy-img{
+    margin-top: 20%;
+    margin-left: 35%;
+
+}
+
+.productAdmin{
+    table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      th, td {
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {background-color: #f2f2f2;}
+
+      .card-head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        a{
+            color: black;
+            font-size: 18px;
+            font-weight: 500;
+            
+        }
+        .btn-add{
+            color: #fff;
+            margin-left: 10px;
+            background-color: rgb(39, 39, 238);
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+      }
+
+      .error{
+        color: red;
+        margin-top: 10px;
+      }
+
+      img{
+        height: 60px;
+        width: 60px;
+      }
+}
+
+.edit{
+    background-color: rgb(37, 214, 245);
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.delete{
+    background-color: rgb(245, 37, 37);
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.AddCategory{
+    text-align: center;
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0;
+
+        input{
+            width: 50%;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 30px;
+            margin-left: 25%;
+            margin-top: 10px;
+            &:focus{
+                outline: none;
+            }
+        }
+       
+    }
+    button{
+        background-color: rgb(37, 214, 245);
+        padding: 10px 15px;
+        border-radius: 10px;
+        border: none;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+    }
+}

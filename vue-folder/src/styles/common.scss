@@ -1,0 +1,75 @@
+@import './config.scss';
+
+header{
+    box-shadow: 0px 8px 5px -10px rgba(0,0,0,0.68);
+-webkit-box-shadow: 0px 8px 5px -10px rgba(0,0,0,0.68);
+-moz-box-shadow: 0px 8px 5px -10px rgba(0,0,0,0.68);
+    .container{
+        padding: 20px 0;
+        @include flex(space-between,center);
+        ul{
+            @include flex(space-between,center);
+            a{
+                margin-left: 20px;
+                font-size: 15px;
+                font-weight: 600;
+                color: #000;
+                transition: .4s ease;
+                &:hover{
+                    color: $orange;
+                }
+            }
+        }
+        .input-group{
+            position: relative;
+            i{
+                position: absolute;
+                top: 13px;
+                right: 10px;
+            }
+        }
+
+        input{
+            border: none;
+            padding: 15px 20px;
+            border-radius: 50px;
+            width: 110%;
+            box-shadow: -1px 8px 10px -10px rgba(0,0,0,0.68);
+-webkit-box-shadow: -1px 8px 10px -10px rgba(0,0,0,0.68);
+-moz-box-shadow: -1px 8px 10px -10px rgba(0,0,0,0.68);
+        }
+        button{
+            @include button(10px 20px,13px,30px,#fff);
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .right{
+            @include flex(space-between,center);
+            i{
+                margin-right: 10px;
+                color: $p;
+                font-size: 18px;
+            }
+
+            .myCart{
+                @include button(10px 20px,15px,30px,#fff);
+            }
+        }
+
+        img{
+            width: 8%;
+        }
+    }
+}
+
+footer{
+    background-color: $brown;
+    padding: 2% 0;
+    .container{
+        text-align: center;
+        p{
+            color: #a09c99;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$orange:#fc5c00;
+$p:#415061;
+$brown:#312620;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f6f7f8;
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+}
+
+@mixin flex($justify-content,$align-items){
+    display: flex;
+    justify-content: $justify-content;
+    align-items:$align-items ;
+}
+
+@mixin grid($num){
+    display: grid;
+    grid-template-columns: repeat($num,1fr);
+    grid-gap: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+ }
+li{
+    list-style: none;
+}
+
+@mixin button($p,$fz,$br,$color){
+    padding: $p;
+    background: linear-gradient(to right,#ff4267,$orange);
+    font-size: $fz;
+    border: none;
+    border-radius: $br;
+    color: $color;
+}
+button{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

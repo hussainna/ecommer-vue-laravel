@@ -1,0 +1,30 @@
+@import './config.scss';
+.place{
+    .container{
+        margin-top: 5%;
+        text-align: center;
+        button{
+            @include button(10px 20px,13px,30px,#fff);
+
+        }
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            margin: 15px 0;
+            input{
+                width: 50%;
+                border: none;
+                margin-left: 25%;
+                padding: 15px 20px;
+                margin-top: 10px;
+                border-radius: 30px;
+                margin-top: 10px;
+                &:focus{
+                    outline: none;
+                }
+            }
+          
+           
+        }
+    }
+}

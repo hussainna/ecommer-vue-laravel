@@ -1,0 +1,43 @@
+@import './config.scss';
+
+.product{
+    .container{
+        margin-top: 5%;
+        margin-left: 15%;
+
+        .card{
+            @include flex(center,center);
+            padding: 50px;
+            background-color: #fff;
+            width: 70%;
+            border-radius: 10px;
+            margin-bottom: 10%;
+            img{
+                width: 30%;
+                border-radius: 10px;
+                margin-right: 20px;
+            }
+            .qty{
+                margin: 10px 0;
+                label{
+                    margin: 0px 10px;
+                }
+            }
+            .right{
+                margin-left: 20px;
+               h4{
+                font-weight: 400;
+                font-size: 18px;
+               }
+                p{
+                    color: $p;
+                    margin: 10px 0;
+                }
+                button,a{
+                    @include button(10px 20px,13px,30px,#fff);
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,316 @@
+@import './config.scss';
+
+.hero{
+    .container{
+        text-align: center;
+        margin-top: 10%;
+
+        h4{
+            font-size: 30px;
+            width: 50%;
+            margin-left: 25%;
+            margin-bottom: 20px;
+        }
+        p{
+            color: $p;
+        }
+        .input-group{
+                position: relative;
+                margin: 20px 0;
+            input{
+                width: 60%;
+                border: none;
+                padding: 25px 150px;
+                border-radius: 50px;
+            }
+            label{
+                position: absolute;
+                top: 18px;
+                left: 22%;
+                padding-right: 10px;
+                border-right: 2px solid #cccccc;
+            }
+            i{
+                position: absolute;
+                top: 18px;
+                right: 22%;
+                font-size: 23px;
+            }
+        }
+
+        .bottom{
+            @include flex(space-between,center);
+            margin-top: 5%;
+            img{
+                height: 60px;
+                width: 60px;
+            }
+            .item{
+                @include flex(center,center);
+                padding: 25px 35px;
+                background-color: #fff;
+                border-radius: 10px;
+                margin-left: 20px;
+
+            }
+            .item-text{
+                text-align: left;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    span{
+        color: $orange;
+    }
+}
+
+
+
+.products{
+    .container{
+        margin-top: 5%;
+
+        .con-text{
+            text-align: center;
+            h4{
+                font-size: 30px;
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+            p{
+                color: $p;
+                margin-bottom: 20px;
+            }
+        }
+   
+        .row{
+           
+            @include grid(4);
+            margin-top: 50px;
+            img{
+                border-radius: 20px;
+                width: 100%;
+            }
+            h4{
+                font-weight: 500;
+                transition: .4s ease;
+                cursor: pointer;
+                &:hover{
+                    color: $orange;
+                }
+
+            }
+            p{
+                color: $p;
+                margin: 5px 0;
+            }
+        }
+    }
+}
+
+
+.banner{
+    .container{
+        margin-top: 5%;
+        .row{
+            @include flex(space-between,center);
+            .col{
+                position: relative;
+                margin-right: 20px;
+            }
+            img{
+                width: 100%;
+            }
+            .col-text{
+                position: absolute;
+                top: 30px;
+                left: 20px;
+                
+                h4{
+                    font-weight: 400;
+                    font-size: 25px;
+                    color: #fff;
+                    width: 80%;
+                }
+                p{
+                    margin: 5px 0;
+                    color: #C58DA5;
+                }
+                button{
+                    margin-top: 10px;
+                    @include button(10px 20px,13px,30px,#fff);
+                }
+            }
+        }
+    }
+}
+
+
+.top-products{
+    .container{
+        margin-top: 5%;
+        .top-text{
+            @include flex(space-between,center);
+            h4{
+                font-size: 30px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            p{
+                color: $p;
+                margin-bottom: 20px;
+            }
+
+            ul{
+                @include flex(space-between,center);
+                button{
+                    cursor: pointer;
+                    margin-left: 10px;
+                    @include button(10px 15px,15px,30px,#fff);
+                }
+
+            }
+        }
+
+        .row{
+            @include grid(4);
+            margin-top: 50px;
+            img{
+                border-radius: 20px;
+                width: 100%;
+            }
+            h4{
+                font-weight: 500;
+
+            }
+            p{
+                color: $p;
+                margin: 5px 0;
+            }
+        }
+    }
+}
+
+.comment{
+    .container{
+        margin: 5% 0;
+        text-align: center;
+        h4{
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        p{
+            color: $p;
+            margin: 20px 0;
+        }
+        .row{
+            @include flex(space-between,center);
+            margin-top: 6%;
+
+            .col{
+                background-color: #fff;
+                margin-left: 20px;
+                padding: 20px;
+                border-radius: 10px;
+                position: relative;
+
+                h4{
+                    font-size: 20px;
+                    color: #0a2748;
+                }
+
+            }
+
+            i{
+                color: #6c8eb6;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 50%;
+                position: absolute;
+                top: -12%;
+                right: 42%;
+                font-size: 25px;
+                -webkit-box-shadow: 2px 2px 14px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 2px 14px -6px rgba(0,0,0,0.75);
+box-shadow: 2px 2px 14px -6px rgba(0,0,0,0.75);
+            }
+
+        }
+    }
+}
+
+.posts{
+    .container{
+        margin: 5% 0;
+        .con-text{
+            text-align: center;
+            h4{
+                font-size: 30px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            p{
+                color: $p;
+                margin-bottom: 20px;
+            }
+        }
+        .row{
+            @include flex(space-between,center);
+            img{
+                width: 100%;
+                border-radius: 10px;
+            }
+            .col{
+                margin-left: 30px;
+                position: relative;
+            }
+            .col-text{
+                position: absolute;
+                top: 20px;
+                left: 20px;
+            }
+            .bottom{
+                margin-top: 100px;
+                h4{
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: #fff
+                }
+                p{
+                    color: $p;
+                }
+                span{
+                    color: $orange;
+                    font-size: 20px;
+                }
+            }
+            button{
+                @include button(10px 20px,13px,30px,#fff);
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
